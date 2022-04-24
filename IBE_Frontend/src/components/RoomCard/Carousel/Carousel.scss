@@ -1,0 +1,19 @@
+.swiper-button-prev:after {
+  color: white;
+  opacity: 0.5;
+  --swiper-navigation-size: 30px;
+}
+.swiper-button-next:after {
+  color: white;
+  opacity: 0.5;
+  --swiper-navigation-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+.card-prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

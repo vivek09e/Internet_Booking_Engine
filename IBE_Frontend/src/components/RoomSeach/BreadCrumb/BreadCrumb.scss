@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.progress-tracker {
+  background-color: rgb(210, 223, 221);
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: stretch;
+  margin-top: 0px;
+  @media screen and (max-width: 900px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.MuiBox-root.progress-tracker {
+  .MuiStepper-root {
+    .MuiStep-root {
+      .Mui-active {
+        .MuiStepConnector-line {
+          border-color: $primary-color;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+}
+
+.stepper-label.MuiStepLabel-root {
+  .MuiStepLabel-iconContainer {
+    .Mui-completed {
+      color: $primary-color;
+    }
+    .Mui-active {
+      color: $primary-color;
+    }
+  }
+  color: $primary-color;
+}

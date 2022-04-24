@@ -1,0 +1,185 @@
+@import "../styles/variables.scss";
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
+  margin-bottom: 90px;
+  @media screen and (max-width:900px) {
+    margin-bottom: 90px;
+  }
+  .MuiBox-root.progress-tracker {
+    .MuiStepper-root {
+      .MuiStep-root {
+        .MuiStepConnector-root {
+          .MuiStepConnector-line {
+            border-color: $primary-color;
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.checkout-page-container {
+  display: flex;
+  flex-direction: row;
+
+  .checkout-page-left-container {
+    width: 70%;
+    border: 1px;
+    padding: 30px;
+  }
+  .checkout-page-right-container {
+    padding: 10px;
+    width: 30%;
+    border: 1px;
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    .checkout-page-left-container {
+      width: 100%;
+    }
+    .checkout-page-right-container {
+      width: 100%;
+    }
+  }
+}
+
+.traveler-info-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  .form-box {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    row-gap: 10px;
+    @media  screen and (max-width:900px) {
+      flex-direction: column;
+    }
+  }
+
+  .form-button {
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    align-self: flex-end;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+    @media screen and (max-width: 900px) {
+      width: 95%;
+    }
+  }
+  .total-due{
+    font-weight: 600;
+    display: flex;
+    align-self: flex-end;
+  }
+
+
+  .form-button-edit {
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    align-self: flex-end;
+    border: none;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+      border: none;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 5px;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      flex-direction: column;
+      align-self: center;
+    }
+  }
+}
+.phone-input {
+  padding-left: 1.2px;
+  --PhoneInputCountryFlag-height: 1.4em;
+  --PhoneInputCountrySelectArrow-width: 0.6em;
+  --PhoneInputCountrySelectArrow-marginLeft: 10px;
+  --PhoneInputCountrySelect-marginRight: 10px;
+  padding: 16.5px, 14px;
+  input.PhoneInputInput {
+    height: 48px;
+    width: 59.2vw;
+    padding-left: 10px;
+    font-size: medium;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 3px;
+  }
+}
+
+.country-state{
+  width:100%;
+  display: flex;
+  gap:10px;
+}
+.country-dropdown{
+  width:49.7%;
+  height: 50px;
+  margin-right: 0.6%;
+  border-color: rgb(185, 185, 185);
+  border-radius: 4px;
+  font:inherit;
+  padding-left: 10px;
+}
+
+.region-dropdown{
+  padding-left: 10px;
+  font:inherit;
+  width: 49.7%;
+  height: 50px;
+  border-color: rgb(185, 185, 185);
+  border-radius: 4px;
+}
+
+.due-at{
+  width: 43%;
+  margin-top: 0px;
+  display: flex;
+  align-self: flex-end;
+}
+.expiry{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid;
+  border-color: rgb(182, 173, 173);
+  border-radius: 2px;
+  padding: 10px;
+  height: 52px;
+  gap:10px;
+  .expiry-text{
+    font-size: xx-small;
+    width: 70px;
+    
+  }
+}

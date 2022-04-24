@@ -1,0 +1,78 @@
+@import "../styles/variables.scss";
+
+.horizontal-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  height: 10%;
+  padding-right: 25px;
+  gap: 30px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    height: auto;
+    padding-right: 0px;
+  }
+  .Accessible {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .guest-room {
+    gap: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    .Guest {
+      width: 50%;
+    }
+    .roomSelect,
+    .bedSelect {
+      width: 30%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      flex-direction: column;
+      .Guest {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .roomSelect,
+      .bedSelect {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .Calender {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    @media screen and (max-width: 900px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+    }
+  }
+  .search-button {
+    height: 3.8em;
+    width: 10%;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+    @media screen and (max-width: 900px) {
+      width: 95%;
+    }
+  }
+}

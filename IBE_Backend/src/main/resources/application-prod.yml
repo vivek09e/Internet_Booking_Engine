@@ -1,0 +1,38 @@
+spring:
+  codec:
+    max-in-memory-size: 10MB
+  application:
+    name: IBSApplication
+  datasource:
+    url: jdbc:postgresql://aaggv04qlg603w.c7dcw1hrxuwr.us-east-2.rds.amazonaws.com:5432/ibsmanagement
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8082
+
+security:
+  user:
+    password: password
+  oauth2:
+    resource:
+      filter-order: 3
+
+
+
+graphql-api: "https://nv2gtrwf4fekjee4hvtkbmhpni.appsync-api.us-east-1.amazonaws.com"
+AWS_APPSYNC_API_KEY: "da2-dwe3entw3vbalp6b5gfva2neey"
+
+jwt-secret: "KDU2022Team1"

@@ -1,0 +1,34 @@
+.MuiTypography-root.rate-breakdown-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 16px 24px;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.MuiIconButton-root.info-class {
+  margin-top: -10px;
+  padding: 0px;
+}
+.room-breakdown-title-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.MuiIconButton-root.rate-breakdown-close {
+  align-items: start;
+}
+.rate-breakdown-price-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.room-breakdown-small-text {
+  float: right;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.MuiDialogTitle-root.rate-breakdown-padding {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}

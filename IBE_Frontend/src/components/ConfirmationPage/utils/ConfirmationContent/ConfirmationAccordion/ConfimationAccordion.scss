@@ -1,0 +1,46 @@
+@import "../../../../styles/variables.scss";
+
+.data-summary {
+  display: flex;
+  flex-direction: column;
+  .data-summary-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .small-gray {
+      color: grey;
+      size: small;
+    }
+
+  }
+}
+
+  .MuiCollapse-root {
+    height: auto;
+    min-height: 100px;
+    visibility: visible;
+  }
+  
+
+
+  @media print {
+    .MuiCollapse-container {
+      height: auto;
+      visibility: visible;
+    }
+    .MuiCollapse-root {
+      height: auto;
+      visibility: visible;
+    }
+    .MuiAccordion-root{
+      height: auto;
+      visibility: visible;
+    }
+    
+  }
+
+  .divider{
+    padding-top:2px;
+    padding-bottom: 2px;
+  }

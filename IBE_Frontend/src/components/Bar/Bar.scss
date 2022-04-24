@@ -1,0 +1,14 @@
+@import "../styles/variables.scss";
+
+.bar {
+  background-color: $secondary-color;
+  object-fit: fill;
+  .page-name {
+    position: absolute;
+    font-size: xx-large;
+    margin-left: 3%;
+    color: white;
+    font-weight: bolder;
+    margin-top: -50px;
+  }
+}

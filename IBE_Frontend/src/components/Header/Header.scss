@@ -1,0 +1,124 @@
+@import "../styles/variables.scss";
+
+.header {
+  position: fixed;
+  z-index: 2;
+}
+.appbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $text_color;
+  background-color: $primary_color;
+
+  .hotel-name {
+    display: flex;
+    flex-grow: 1;
+  }
+  .header-item {
+    color: inherit;
+    box-shadow: none;
+    list-style: none;
+    bottom: none;
+    border-bottom: none;
+  }
+  .header-item-button {
+    color: inherit;
+    border-color: inherit;
+    cursor: pointer;
+    margin-right: 30px;
+    text-decoration: none;
+    &:hover {
+      background-color: $secondary-color;
+      border: white;
+    }
+  }
+  .MuiBackdrop-root {
+    color: white;
+    border: none;
+    border-bottom: none;
+  }
+}
+
+.textfield {
+  // * to change the inner color of the textfield we used !important
+  color: $text_color !important;
+}
+
+.right-appbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding-right: 20px;
+  @media screen and (max-width: 900px) {
+    display: none;
+    padding-right: none;
+  }
+}
+.logo {
+  height: 40px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.mobile-view {
+  display: none;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+  }
+  .header-item {
+    display: flex;
+    padding-left: 15%;
+    align-items: baseline;
+  }
+  .language {
+    display: flex;
+    padding-left: 15px;
+    gap: 2px;
+    align-items: center;
+  }
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  margin: 1.5vw;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 12%;
+}
+
+.navbar a:hover {
+  border-bottom: 5px solid $secondary-color;
+}
+
+.navbar .mobile-view .hamburger {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.navbar nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 35%;
+  background: $secondary-color;
+  border-top: 2px solid $secondary-color;
+}
+
+.navbar {
+  opacity: 1;
+}
+
+.MuiAppBar-root.header{
+  box-shadow: none;
+}

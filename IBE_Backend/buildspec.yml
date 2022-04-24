@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - cd ..
+      - cd src/IBE_Backend
+      - echo Entered the build phase...
+      - mvn clean install -Dmaven.test.skip=true
+  post_build:
+    commands:
+      - echo Build completed successfully
+artifacts:
+  files:
+    - IBE_Backend/target/ibs-backend.jar
+  discard-paths: yes

@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+.count-down {
+  background-color: rgb(167, 167, 167);
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-top: auto;
+}

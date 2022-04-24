@@ -1,0 +1,132 @@
+@import "../../../styles/variables.scss";
+
+.confirmation-outer-box {
+    padding: 20px;
+    border: solid;
+    border-color: $primary-color;
+    border-radius: 1%;
+    border-width: 1px;
+
+    .room-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .room-details-first {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .person-icon {
+            margin-left: 10px;
+            font-size: 15px;
+            color: rgb(114, 114, 114);
+        }
+        .guest-data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: small;
+            color: rgb(114, 114, 114);
+        }
+        @media  screen and (max-width:900px) {
+            flex-direction: column;
+        }
+        @media print{
+            flex-direction: column;
+        }
+    }
+    .room-details-second {
+        display: flex;
+        justify-content: space-between;
+
+        @media  screen and (max-width:900px) {
+            flex-direction: column-reverse;
+        }
+        @media print{
+            flex-direction: column-reverse;
+        }
+        .checkin-container {
+            padding: 10px;
+            border: solid;
+            border-color: $primary-color;
+            border-radius: 1%;
+            border-width: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media  screen and (max-width:900px) {
+                width: 300px;
+            }
+            @media print {
+                width: 300px;
+            }
+
+        }
+        .small-size {
+            font-size: smaller;
+        }
+        .room-details-second-image{
+            height: 200px;
+            width: 100%;
+        
+        }
+        .room-details-second-dates {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            @media  screen and (max-width:900px) {
+                justify-content: center;
+            }
+            @media  print {
+                justify-content: center;
+            }
+            
+        }
+        .room-details-second-second {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .terms {
+                margin-top: 20px;
+            }
+        }
+        .bold-text {
+            font-size: medium;
+            font-weight: 550;
+        }
+        .room-details-second-last {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .room-details-second-first {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            @media  screen and (max-width:900px) {
+            
+                flex-direction: column;
+            }
+            @media  print {
+            
+                flex-direction: column;
+            }
+        }
+    }
+}
+.MuiButton-root.remove-button {
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+    }
+    @media print{
+            display: none;
+        }
+}
+.MuiButton-root.confirm-booking {
+    background-color: $primary-color;
+    &:hover {
+        background-color: $secondary-color;
+    }
+}

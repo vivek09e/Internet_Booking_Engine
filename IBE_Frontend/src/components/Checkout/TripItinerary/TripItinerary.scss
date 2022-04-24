@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+.trip-itinerary-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    .trip-itinerary{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        border: solid;
+        border-color: $primary-color;
+        border-radius: 1%;
+        border-width: 1px;
+        padding: 10px;
+
+        .property-name{
+            font-size: larger;
+        }
+        .trip-itinerary-header-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding-bottom: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .remove-button{
+                color: $primary-color;
+                &:hover {
+                  color: $secondary-color;
+                }
+        }
+
+    }
+    .bold-text{
+        font-size:large;
+        font-weight: 550;
+    }
+    .light-text{
+        color:rgb(83, 79, 79);
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .need-help{
+        display: flex;
+        height: 20%;
+        border: solid;
+        border-color: $primary-color;
+        border-radius: 1%;
+        border-width: 1px;
+        padding: 10px;
+    }
+    .divider{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .price-data{
+        display: flex;
+        flex-direction: column
+    }
+    .price-data-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .continue-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .continue-btn{
+            width: fit-content;
+        }
+    }
+
+}

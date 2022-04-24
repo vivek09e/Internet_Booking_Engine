@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.confirmation-page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media print{
+    display: none;
+  }
+}
+.print-invoice{
+  display: none;
+  @media print {
+    padding: 10px;
+    display: flex;
+  }
+}
+.MuiButton-root.outlined-button {
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+@media print {
+  .MuiCollapse-container {
+    height: auto;
+    visibility: visible;
+  }
+  .MuiCollapse-root {
+    height: auto;
+    visibility: visible;
+  }
+}
+
+.Collapse{
+  display: flex;
+  justify-content: flex-end;
+  margin-left:85%;
+}

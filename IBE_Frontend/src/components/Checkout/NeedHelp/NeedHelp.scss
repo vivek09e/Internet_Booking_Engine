@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+.need-help {
+  margin-top: 12px;
+  display: flex;
+  height: 20%;
+  border: solid;
+  border-color: $primary-color;
+  border-radius: 2%;
+  border-width: 1px;
+  padding: 10px;
+}

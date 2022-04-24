@@ -1,0 +1,149 @@
+@import "../styles/variables.scss";
+
+.more-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1px;
+  width: 100%;
+  flex-wrap: wrap;
+
+  Button {
+    background-color: $primary-color;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    visibility: "contained";
+    size: "small";
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+  .MuiCheckbox-root.checked-button {
+    color: $primary-color;
+  }
+}
+
+.center-align {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.room-card {
+  max-width: 320px;
+  justify-content: space-between;
+  height: fit-content;
+  margin-bottom: 10px;
+  @media screen and (max-width: 900px) {
+    justify-content: space-around;
+  }
+  .room-card-rating{
+    display: flex;
+    align-items: center;
+  }
+  .card-image {
+    height: 200px;
+    width: 400px;
+  }
+  .price-box {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    background-color: white;
+  }
+  .card-rate-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    flex-wrap: wrap;
+  }
+  .card-prices {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .card-price-container-del {
+    color: grey;
+  }
+  .per-night {
+    color: grey;
+  }
+
+  .card-price-item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .property-name {
+    display: none;
+  }
+}
+
+.room-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.room-result-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-right: 25px;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.pipe{
+  font-size: large;
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.on-card-price {
+  position: absolute;
+  color: "black";
+  background: "white";
+}
+
+.header-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    justify-items: center;
+    .pipe{
+      display: none;
+    }
+    flex-direction: column;
+
+    .room-result-sort{
+       font-size: smaller;
+    }
+  }
+}

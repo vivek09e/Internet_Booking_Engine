@@ -1,0 +1,75 @@
+.Calender {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+}
+.date-calender {
+  margin: left 10px !important;
+  font-size: small !important;
+  float: right;
+}
+
+.rate-calender {
+  font: size 10px !important;
+}
+
+.desktop-range-picker .MuiDateRangePickerDay-root:last-of-type {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.desktop-range-picker .MuiDateRangePickerDay-root:first-of-type {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.desktop-range-picker
+  .MuiDateRangePickerDay-rangeIntervalPreview
+  .MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day {
+  border-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.desktop-range-picker .MuiButtonBase-root {
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.date-calender {
+  margin: left 10px !important;
+  font-size: small !important;
+  float: right;
+}
+
+.rate-calender {
+  font: size 10px !important;
+}
+
+.desktop-range-picker .MuiDateRangePickerDay-root:last-of-type {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.desktop-range-picker .MuiDateRangePickerDay-root:first-of-type {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.desktop-range-picker
+  .MuiDateRangePickerDay-rangeIntervalPreview
+  .MuiButtonBase-root-MuiPickersDay-root-MuiDateRangePickerDay-day {
+  border-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.desktop-range-picker .MuiButtonBase-root {
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}

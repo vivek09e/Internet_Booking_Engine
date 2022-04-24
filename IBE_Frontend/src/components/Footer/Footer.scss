@@ -1,0 +1,27 @@
+@import "../styles/variables.scss";
+.footer {
+  height: 30px;
+  position: fixed;
+
+  padding: 3px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $secondary-color;
+  z-index: 2;
+
+  .footer-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    color: white;
+
+    .footer-link {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../styles/variables.scss";
+
+.review-booking {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  .review-booking-box {
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    border-color: rgb(182, 173, 173);
+    border-radius: 2px;
+    padding: 10px;
+
+    .review-choices {
+      width: 100%;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .submit-button {
+      display: flex;
+      float:right;
+      background-color: $primary-color;
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

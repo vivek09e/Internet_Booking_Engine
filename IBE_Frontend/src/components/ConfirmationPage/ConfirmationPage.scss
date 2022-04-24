@@ -1,0 +1,26 @@
+@import "../styles/variables.scss";
+.confirmation-page {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  .confirmation-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .update-reservations {
+    margin-top: 10px;
+    align-self: flex-end;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 40px;
+    }
+  }
+}

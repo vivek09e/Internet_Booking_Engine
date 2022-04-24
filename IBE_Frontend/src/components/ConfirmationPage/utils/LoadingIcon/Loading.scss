@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+.circular-progress {
+  margin-top: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.MuiBox-root.circular-progress {
+  .MuiCircularProgress-root {
+    .MuiCircularProgress-svg {
+      color: $primary-color;
+    }
+  }
+}
