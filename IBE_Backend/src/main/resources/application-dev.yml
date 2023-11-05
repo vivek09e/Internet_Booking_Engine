@@ -4,7 +4,7 @@ spring:
   application:
     name: IBSApplication
   datasource:
-    url: jdbc:postgresql://database-1.c7dcw1hrxuwr.us-east-2.rds.amazonaws.com:5432/ibsmanagement
+    url: "URL"
     username: root
     password: password
   jpa:
@@ -32,7 +32,7 @@ security:
 
 
 
-graphql-api: "https://nv2gtrwf4fekjee4hvtkbmhpni.appsync-api.us-east-1.amazonaws.com"
-AWS_APPSYNC_API_KEY: "da2-dwe3entw3vbalp6b5gfva2neey"
+graphql-api: 
+AWS_APPSYNC_API_KEY: 
 
-jwt-secret: "KDU2022Team1"
+jwt-secret: 
