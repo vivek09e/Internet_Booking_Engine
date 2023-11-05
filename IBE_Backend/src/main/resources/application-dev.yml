@@ -5,8 +5,8 @@ spring:
     name: IBSApplication
   datasource:
     url: "URL"
-    username: root
-    password: password
+    username: 
+    password: 
   jpa:
     hibernate:
       ddl-auto: update

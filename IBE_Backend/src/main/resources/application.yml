@@ -8,8 +8,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/ibsmanagement
-    username: postgres
-    password: Vivek09e@
+    username: 
+    password: --
   jpa:
     hibernate:
       ddl-auto: update
@@ -33,5 +33,5 @@ security:
     resource:
       filter-order: 3
 
-graphql-api: "https://nv2gtrwf4fekjee4hvtkbmhpni.appsync-api.us-east-1.amazonaws.com"
-AWS_APPSYNC_API_KEY: "da2-dwe3entw3vbalp6b5gfva2neey"
+graphql-api: 
+AWS_APPSYNC_API_KEY: 
